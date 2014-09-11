@@ -1,20 +1,10 @@
-require './thread-dumper.rb'
 require 'sinatra'
 
-# set :bind, "www.seanandmallory.com"
-
 get '/' do
-  erb :home
+  "the time where this server lives is #{Time.now}
+    <br /><br />check out your <a href=\"/agent\">user_agent</a>"
 end
 
-get '/index' do
-  erb :index2, :layout => :classy
-end
-
-get '/demo' do
-	erb :demo, :layout => :classy
-end	
-
-get '/sandbox' do
-	erb :sandy, :layout => :sandbox
+get '/agent' do
+  "you're using #{request.user_agent}"
 end
