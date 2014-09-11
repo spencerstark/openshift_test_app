@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: https://mirror.openshift.com/
   specs:
     rack (1.5.2)
     rack-protection (1.5.0)
